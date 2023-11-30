@@ -7,4 +7,11 @@ describe("User", () => {
     expect(char.name).toBe("Rave");
     expect(char.age).toBe(33);
   })
+
+  test('should take User age and convert it to mercury age', () => {
+    const char = new User("Rave", 33);
+    char.mercuryAge();
+    expect(char.age).toBe(137.5);
+  })
 })
+
