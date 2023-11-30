@@ -25,5 +25,11 @@ describe("User", () => {
     let marsAge = char.marsAge();
     expect(marsAge).toBe(33 /1.88);
   })
+
+  test('should take User age and covert it to jupiter age', () => {
+    const char = new User("Rave", 33);
+    let jupiterAge = char.jupiterAge();
+    expect(jupiterAge).toBe(33 /11.86);
+  })
 })
 
