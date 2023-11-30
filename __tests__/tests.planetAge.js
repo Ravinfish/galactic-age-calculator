@@ -14,10 +14,16 @@ describe("User", () => {
     expect(mercuryAge).toBe(137.5);
   })
 
-  test('should take User age and convert it to venus years', () => {
+  test('should take User age and convert it to venus age', () => {
     const char = new User("Rave", 33);
     let venusAge = char.venusAge();
     expect(venusAge).toBe(33 / .62);
+  })
+
+  test('should take User age and covert it to mars age', () => {
+    const char = new User("Rave", 33);
+    let marsAge = char.marsAge();
+    expect(marsAge).toBe(33 /1.88);
   })
 })
 
