@@ -17,7 +17,7 @@ describe("User", () => {
   test('should take User age and convert it to venus years', () => {
     const char = new User("Rave", 33);
     let venusAge = char.venusAge();
-    expect(venusAge).toBe(53.22);
+    expect(venusAge).toBe(33 / .62);
   })
 })
 

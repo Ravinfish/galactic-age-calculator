@@ -6,5 +6,9 @@ export class User {
 
   mercuryAge() {
     return this.age / .24;
-  }
+  };
+
+  venusAge() {
+    return this.age / .62
+  };
 }
