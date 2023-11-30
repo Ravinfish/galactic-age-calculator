@@ -1,5 +1,5 @@
 {
-  "name": "shape-tracker",
+  "name": "galactic-age-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ravinfish/shape-tracker.git"
+    "url": "git+https://github.com/Ravinfish/galactic-age-calculator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ravinfish/shape-tracker/issues"
+    "url": "https://github.com/Ravinfish/galactic-age-calculator/issues"
   },
-  "homepage": "https://github.com/Ravinfish/shape-tracker#readme",
+  "homepage": "https://github.com/Ravinfish/galactic-age-calculator#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "webpack": "5.87.0"
