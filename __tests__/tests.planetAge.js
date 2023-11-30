@@ -1,3 +1,5 @@
+import { User } from "../src/js/planetAge";
+
 describe("User", () => {
 
   test('should create a User class with name and age value', () => {
