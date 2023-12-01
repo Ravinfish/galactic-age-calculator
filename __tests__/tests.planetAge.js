@@ -54,4 +54,10 @@ describe("PastAge", () => {
     expect(char.time).toBe((char.current - char.past) * .62);
   })
 
+  test('should determain how many years have passed in Mars years', () => {
+    const char = new PastAge(33, 23, 10);
+    char.marsPastAge();
+    expect(char.time).toBe((char.current - char.past) * 1.88);
+  })
+
 })
