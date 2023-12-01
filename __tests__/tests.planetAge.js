@@ -94,4 +94,10 @@ describe("FutureAge", () => {
     char.marsFutureAge();
     expect(char.time).toBe((char.future - char.current) * 1.88);
   })
+
+  test('should determain how many years until future age on Jupiter', () => {
+    const char = new FutureAge(33, 53, 20)
+    char.jupiterFutureAge();
+    expect(char.time).toBe((char.future - char.current) * 11.86);
+  })
 })
