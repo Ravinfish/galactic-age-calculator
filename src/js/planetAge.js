@@ -88,4 +88,10 @@ export class FutureAge {
     this.time = this.time * 1.88
     return this.time;
   }
+
+  jupiterFutureAge() {
+    this.time = (this.future - this.current);
+    this.time = this.time * 11.86
+    return this.time;
+  }
 }
