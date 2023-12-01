@@ -1,5 +1,6 @@
 import { User } from "../src/js/planetAge";
 import { PastAge } from "../src/js/planetAge";
+import { FutureAge } from "../src/js/planetAge";
 
 describe("User", () => {
 
