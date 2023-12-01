@@ -67,7 +67,13 @@ export class FutureAge {
   }
 
   earthFutureAge() {
-    this.time = (this.current + this.future);
+    this.time = (this.future - this.current);
+    return this.time;
+  }
+
+  mercuryFutureAge() {
+    this.time = (this.future - this.current);
+    this.time = this.time * .24
     return this.time;
   }
 }

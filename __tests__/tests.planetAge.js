@@ -74,12 +74,12 @@ describe("FutureAge", () => {
   test('should determain how many years until future age on Earth', () => {
     const char = new FutureAge(33, 53, 20);
     char.earthFutureAge();
-    expect(char.time).toBe(char.current + char.future);
+    expect(char.time).toBe(char.future - char.current);
   })
   
   test('should determain how many years until future age on Mercury', () => {
     const char = new FutureAge(33, 53, 20)
     char.mercuryFutureAge();
-    expect(char.time).toBe((char.current + char.future) * .24);
+    expect(char.time).toBe((char.future - char.current) * .24);
   })
 })
