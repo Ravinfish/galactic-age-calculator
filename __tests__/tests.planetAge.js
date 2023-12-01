@@ -31,5 +31,11 @@ describe("User", () => {
     let jupiterAge = char.jupiterAge();
     expect(jupiterAge).toBe(33 /11.86);
   })
+
+  test('should determain how many yeaars have passed since a past birthday', () => {
+    const char = new User("Rave", 33);
+    let pastAge = char.pastAge();
+    expect(pastAge).toBe(21);
+  })
 })
 
