@@ -65,4 +65,9 @@ export class FutureAge {
     this.future = future;
     this.time = time;
   }
+
+  earthFutureAge() {
+    this.time = (this.current + this.future);
+    return this.time;
+  }
 }
