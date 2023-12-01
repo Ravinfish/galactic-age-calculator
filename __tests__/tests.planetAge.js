@@ -60,4 +60,10 @@ describe("PastAge", () => {
     expect(char.time).toBe((char.current - char.past) * 1.88);
   })
 
+  test('should determain how many years have passed in Jupiter years', () => {
+    const char = new PastAge(33, 23, 10);
+    char.jupiterPastAge();
+    expect(char.time).toBe((char.current - char.past) * 11.86);
+  })
+
 })
