@@ -20,3 +20,17 @@ export class User {
     return this.age / 11.86
   };
 }
+
+export class PastAge {
+  constructor(current, past, time) {
+    this.current = current;
+    this.past = past;
+    this.time = time;
+  }
+
+  earthPastAge() {
+    this.time = (this.current - this.past);
+    return this.time;
+  }
+
+}

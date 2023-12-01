@@ -1,4 +1,5 @@
 import { User } from "../src/js/planetAge";
+import { PastAge } from "../src/js/planetAge";
 
 describe("User", () => {
 
@@ -34,10 +35,10 @@ describe("User", () => {
 })
 
 describe("PastAge", () => {
-  
+
   test('should determain how many years have passed since a past birthday on Earth', () => {
-    const char = new PastAge(33, 21);
+    const char = new PastAge(33, 23, 10);
     char.earthPastAge();
-    expect(char.time).toBe((char.current - char.past));
+    expect(char.time).toBe(char.current - char.past);
   })
 })
