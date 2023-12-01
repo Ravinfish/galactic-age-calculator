@@ -82,4 +82,10 @@ describe("FutureAge", () => {
     char.mercuryFutureAge();
     expect(char.time).toBe((char.future - char.current) * .24);
   })
+
+  test('should determain how many years until future age on Venus', () => {
+    const char = new FutureAge(33, 53, 20)
+    char.venusFutureAge();
+    expect(char.time).toBe((char.future - char.current) * .62);
+  })
 })
