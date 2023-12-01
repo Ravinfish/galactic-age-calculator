@@ -41,4 +41,10 @@ describe("PastAge", () => {
     char.earthPastAge();
     expect(char.time).toBe(char.current - char.past);
   })
+
+  test('should determain how many years have passed in Mercury years', () => {
+    const char = new PastAge(33, 23, 10);
+    char.mercuryPastAge();
+    expect(char.time).toBe((char.current - char.past) *.24);
+  })
 })

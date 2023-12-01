@@ -33,4 +33,28 @@ export class PastAge {
     return this.time;
   }
 
+  mercuryPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * .24
+    return this.time;
+  }
+
+  venusPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * .62
+    return this.time;
+  }
+
+  marsPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * 1.88
+    return this.time;
+  }
+
+  jupiterPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * 11.86
+    return this.time;
+  }
+
 }
